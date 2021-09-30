@@ -11,7 +11,10 @@ let ten = 10;
 let add = fn(x, y) {
 	x + y;
 };
+
 let result = add(five, ten);
+!-/*5;
+5 < 10 > 5;
 `
 	tests := []struct {
 		expectedType    token.TokenType
@@ -68,6 +71,7 @@ let result = add(five, ten);
 		}
 	}
 }
+
 func TestNextToken1(t *testing.T) {
 	input := `=+(){},;`
 
